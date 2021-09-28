@@ -26,3 +26,21 @@ function display(n) {
 }
 
 display(100);
+
+// problem 3 Fibonacci Series
+
+//set prompt for user to enter number of terms they want in the sequence
+let number = prompt('enter the number of terms:');
+let n1 = 0;
+let n2 = 1;
+let next;
+
+console.log('Fibonacci Series');
+//for loop to iterate through icremented numbers starting from 0 going up 1.
+for(let i = 1; i <= number; i++) {
+    console.log(n1);
+    //add n1 and n2 variable so system can execute the fibonacci sequence.
+    next = n1 + n2;
+    n1 = n2
+    n2 = next;
+}
